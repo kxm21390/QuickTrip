@@ -1,0 +1,22 @@
+<h4 *ngIf="urlData != 'Explore'; else elseBlock" class="colorWhite">Grab {{urlData}}</h4>
+<ng-template #elseBlock><h2 class="colorWhite">{{urlData}} Nearby</h2></ng-template>
+<h6 class="colorWhite">What is your price range?</h6>
+<div class="btn-group">
+    <button class="btn btn-secondary btn-lg dropdown-toggle transparentButtons mb40" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      PRICE
+    </button>
+    <div class="dropdown-menu">
+      
+    </div>
+  </div>
+  <h6 *ngIf="urlData === 'Food'" class="colorWhite">What do you feel like eating?</h6>
+  <h6 *ngIf="urlData === 'Drinks'" class="colorWhite">What type of drink are you feeling?</h6>
+  <h6 *ngIf="urlData === 'Explore'" class="colorWhite">What do you want to explore nearby?</h6>
+  <div class="btn-group">
+    <button class="btn btn-secondary btn-lg dropdown-toggle transparentButtons mb40" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      {{urlData}}
+    </button>
+    <div class="dropdown-menu">
+      
+    </div>
+  </div>

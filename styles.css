@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+.textAlign {
+    text-align: center;
+}
+
+body {
+    background-image: url("quicktrip.gif");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.colorWhite {
+    color: white;
+}
+
+.transparentButtons {
+  width:200px;
+  height: 100px;
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: solid;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.container .transparentButtons:hover {
+    background-color: black;
+  }
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+.pt30 {
+    padding-top: 30px;
+}
+
+.textDecoratorNone:hover {
+  text-decoration: none;
+  color: white;
+}
