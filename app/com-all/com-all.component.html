@@ -5,8 +5,10 @@
     <button class="btn btn-secondary btn-lg dropdown-toggle transparentButtons mb40" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       PRICE
     </button>
-    <div class="dropdown-menu">
-      
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">$</a>
+      <a class="dropdown-item" href="#">$$</a>
+      <a class="dropdown-item" href="#">$$$</a>
     </div>
   </div>
   <h6 *ngIf="urlData === 'Food'" class="colorWhite">What do you feel like eating?</h6>
@@ -16,7 +18,20 @@
     <button class="btn btn-secondary btn-lg dropdown-toggle transparentButtons mb40" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       {{urlData}}
     </button>
-    <div class="dropdown-menu">
-      
+    <div *ngIf="urlData === 'Food'" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Burger</a>
+      <a class="dropdown-item" href="#">Pizza</a>
+      <a class="dropdown-item" href="#">Sandwich</a>
+    </div>
+    <div *ngIf="urlData === 'Drinks'" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Pepsi</a>
+      <a class="dropdown-item" href="#">Water</a>
+      <a class="dropdown-item" href="#">Lemonade</a>
+    </div>
+    <div *ngIf="urlData === 'Explore'" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">LA</a>
+      <a class="dropdown-item" href="#">SFO</a>
+      <a class="dropdown-item" href="#">Irvine</a>
     </div>
   </div>
+
