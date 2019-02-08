@@ -44,3 +44,14 @@ body {
   text-decoration: none;
   color: white;
 }
+
+.ft12 {
+  font-size: 12px;
+}
+.dropdown-menu {
+  min-width: 12.5em !important;
+}
+
+.dropdown-menu.show{
+  opacity: 0.5;
+}
