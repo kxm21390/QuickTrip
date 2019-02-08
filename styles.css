@@ -42,7 +42,11 @@ body {
 
 .textDecoratorNone:hover {
   text-decoration: none;
-  color: white;
+  cursor: pointer;
+}
+
+.cursorNotAllowed {
+  cursor: not-allowed;
 }
 
 .ft12 {
@@ -54,4 +58,12 @@ body {
 
 .dropdown-menu.show{
   opacity: 0.5;
+}
+
+.bgRed {
+  background-color: red;
+}
+
+.bgRed:hover {
+  background-color: red;
 }
