@@ -11,9 +11,26 @@ export class ComAllComponent implements OnInit {
   constructor(private router: Router) { }
   public urlData;
   public prices;
+  public textContent;
   public dropdownValues;
+  public menuTitle;
+  public priceFlag = false;
+  public menuFlag = false;
+  public priceTitle = "PRICE";
+
+  clickPrice(priceValue) {
+    this.priceFlag = true;
+    this.priceTitle = priceValue;
+  }
+
+  clickMenu(menuValue) {
+    this.menuFlag = true;
+    this.menuTitle = menuValue;
+  }
+
   ngOnInit() {
     this.urlData = this.router.url.slice(1);
+    this.menuTitle = this.urlData;
     this.prices = ['$', '$$', '$$$'];
     if(this.urlData === 'Food'){
       this.dropdownValues = ['SURPRISE ME', 'AMERICAN', 'BURGERS', 'CHINESE', 'MEXICAN', 'PIZZA', 'SANDWICHES', 'SUSHI'];
@@ -25,7 +42,4 @@ export class ComAllComponent implements OnInit {
       this.dropdownValues = ['SURPRISE ME', 'SHOOPING', 'TOURS', 'FITNESS', 'WINERIES', 'FARMS', 'ARTS', 'FASHION', 'NIGHTLIFE', 'ACTIVE', 'FESTIVALS'];
     }
   }
-
-
-  
 }
