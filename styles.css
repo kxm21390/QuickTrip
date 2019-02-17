@@ -1,0 +1,163 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url("quicktrip.gif");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/* alignment style */
+.textAlignCenter {
+    text-align: center;
+}
+
+.textAlignRight {
+    text-align: right;
+}
+
+.textAlignLeft {
+    text-align: left;
+}
+
+/* color style */
+.colorWhite {
+    color: white;
+}
+
+.colorGreen {
+    color: green;
+}
+
+.bgRed {
+    background-color: red !important;
+}
+
+.bgRed:hover {
+    background-color: red !important;
+}
+
+/* background style */
+.bgWhite {
+    background-color: white;
+}
+
+/* margin style */
+.mb40 {
+    margin-bottom: 40px;
+}
+
+.mt100 {
+    margin-top: 100px;
+}
+
+/* padding style */
+.p10 {
+    padding: 10px;
+}
+
+.pt30 {
+    padding-top: 30px;
+}
+
+/* font style */
+.ft2em {
+    font-size: 2em;
+}
+
+.ft1pt5em {
+    font-size: 1.5em;
+}
+
+.ft12 {
+    font-size: 12px;
+}
+
+/* cursor style */
+.cursorNotAllowed {
+    cursor: not-allowed;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+/* display style */
+
+.displayFlex {
+    display: -webkit-inline-flex;
+}
+
+/* float style */
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+/* width style */
+
+.width150 {
+    width: 150px;
+}
+
+.width500 {
+    width: 500px;
+}
+
+/* height style */
+.height690{
+    height: 690px;
+}
+
+.height150 {
+    height: 150px;
+}
+
+.height50 {
+    height: 50px;
+}
+
+.height20 {
+    height: 20px;
+}
+
+/* scroll style */
+
+.scroll {
+    overflow: scroll;
+}
+
+/* extra style */
+.transparentButtons {
+    width:200px;
+    height: 100px;
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: solid;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.container .transparentButtons:hover {
+    background-color: black;
+  }
+
+.textDecoratorNone:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    min-width: 12.5em !important;
+}
+
+.dropdown-menu.show{
+    opacity: 0.5;
+}

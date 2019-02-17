@@ -1,0 +1,30 @@
+<div class="spinner-border text-light mt100" style="width: 3rem; height: 3rem;" role="status" *ngIf="pageLoader">
+    <span class="sr-only">Loading...</span>
+</div>
+<h4 *ngIf="pageLoader" class="colorWhite">Loading</h4>
+<div class="container colorWhite height690 scroll" *ngIf="!pageLoader">
+  <div *ngFor="let result of results" class="cursorPointer">
+    <div *ngIf="result.searchResultBusiness">
+        <div class="row displayFlex">
+            <div class="col-xs-6 textAlignRight">
+                <img [src]="result.scrollablePhotos ? result.scrollablePhotos.photoList[0].src : ''" alt="Italian Trulli"  class="p10 width150 height150">
+            </div>
+            <div class="col-xs-6 width500 height50">
+                <div class="textAlignLeft ft2em"><b>{{result.searchResultBusiness.name}}</b></div>
+                <div class="ft1pt5em">
+                  <span class="floatLeft">{{result.searchResultBusiness.rating}}</span>
+                  <span>1.4 mi.</span>
+                  <span class="floatRight badge badge-pill badge-success">{{selected.price}}</span>
+                </div>
+            </div>
+          </div>
+        
+          <hr class="bgWhite">
+          <div>
+              <h5>Estimated Total Time</h5>
+              <h3>0 Hours 18 Minutes</h3>
+          </div>
+          <hr class="bgWhite height20">
+    </div>
+  </div>
+</div>
